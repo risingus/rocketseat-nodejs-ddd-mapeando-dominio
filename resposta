@@ -1,0 +1,82 @@
+* Entidades
+1. Produto:
+ a. Atributos:
+   - ID único
+   - Descrição
+   - Tamanho
+   - Cor
+   - Quantidade em estoque
+   - Quantidade mínima em estoque
+   - Preço de venda
+   - Lucro por venda
+   - Histórico de vendas
+   - Histórico de estoque
+
+ b. Comportamentos:
+  - Rastrear movimentações no estoque
+  - Gerar alertas de quantidade mínima
+  - Visualizar histórico de vendas e estoque
+
+2. Alerta de Estoque:
+  a. Atributos:
+    - Produto
+    - Quantidade em estoque
+    - Data e hora do alerta
+    - Método de envio (e-mail, SMS, etc.)
+  b. Comportamentos:
+    - Enviar alerta para o usuário
+
+3. Venda:
+  a. Atributos:
+    - Produto
+    - Quantidade vendida
+    - Data e hora da venda
+    - Preço de venda
+    - Lucro
+
+  b. Comportamentos:
+    - Registrar venda
+    - Atualizar histórico de vendas
+    - Atualizar estoque
+
+4. Fornecedor:
+  a. Atributos:
+    - ID
+    - Nome
+    - Endereço
+    - Prazo de entrega
+
+  b. Comportamentos:
+    - Gerenciar pedidos de compra
+    - Receber atualizações de prazos de entrega
+
+
+* Casos de Uso
+
+1. Rastreamento Individual de Produto:
+  - Ator: Usuário do sistema
+  - Objetivo: Rastrear a movimentação de produtos individuais no estoque.
+
+2. Tarefas:
+  - Atribuir um ID único a cada produto.
+  - Adicionar informações extras ao produto (tamanho, cor, etc.).
+  - Visualizar o histórico de movimentações do produto.
+
+3. Gerenciamento de Estoque:
+  - Ator: Usuário do sistema
+  - Objetivo: Gerenciar o estoque de produtos.
+   - Tarefas:
+      a. Definir quantidades mínimas de estoque para produtos.
+      b. Receber alertas quando o estoque estiver baixo.
+      c. Visualizar o histórico de estoque de produtos.
+      d. Criar e gerenciar ordens de compra.
+      e. Integrar o sistema com fornecedores.
+
+4. Análise de Vendas:
+ - Ator: Usuário do sistema
+ - Objetivo: Analisar as vendas de produtos.
+ - Tarefas:
+   a. Visualizar o histórico de vendas de produtos.
+   b. Visualizar o lucro gerado por produto.
+   c. Visualizar os produtos mais vendidos.
+   d. Identificar tendências de vendas.
